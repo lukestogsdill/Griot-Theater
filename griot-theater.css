@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+nav {
+    background-color: black;
+    color: white;
+    border-top: solid 1px white;
+    padding: 10px 0;
+}
+
+nav li,
+nav h1 {
+    display: inline;
+}
+
+nav a {
+    color: white;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    margin: 10px;
+}
+
+.hero-image {
+    display: flex;
+    background-image: url("images/theater-image-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 10rem;
+}
+
+.hero-image h1 {
+    color: white;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+}
+
+.play-block,
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------MAIN MARGIN SPACING----------- */
+main>*>* {
+    margin: 10px;
+}
+
+.play-block>*>* {
+    margin: 10px;
+}
+
+.play-description>* {
+    margin: 1em 2em;
+}
+/* --------MAIN MARGIN SPACING----------- */
+
+.container {
+    width: fit-content;
+}
+
+.date-divider,
+.read-more,
+.play-description {
+    border: solid rgb(0, 0, 0, 0.3) 1px;
+    border-radius: 3px;
+}
+
+.date-divider {
+    padding: 4px;
+    font-style: italic;
+}
+
+.flex-change {
+    display: flex;
+    flex-direction: column;
+}
+
+.read-more {
+    height: fit-content;
+    padding: 8px;
+    background-color: yellow;
+    color: black;
+    align-self: center;
+}
+
+img {
+    max-height: 265px;
+    max-width: 268px;
+    border-radius: 4px;
+}
+
+hr {
+    width: 100% 4px black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.map {
+    margin: 1em;
+}
+
+i {
+    color: orange;
+    font-size: 1em;
+}
+
+.footer-box>* {
+    padding: 1em 0.5em;
+}
+
+.footer-box p,
+.footer-box a {
+    color: gray;
+}
+
+@media screen and (min-width:600px) {
+    .hero-image {
+        height: 30rem;
+    }
+
+    .hero-image h1 {
+        font-size: 5em;
+    }
+
+    .play-block,
+    section,
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (min-width:1100px) {
+    .hero-image {
+        height: 44rem;
+    }
+
+    .hero-image h1 {
+        font-size: 7em;
+    }
+
+    footer,
+    .flex-change,
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    section>* {
+        margin: 0 1rem;
+    }
+}
